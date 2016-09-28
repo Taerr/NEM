@@ -3,6 +3,7 @@ package com.example.nicolas.nem_examples;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,9 +12,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.i("MainActivity", "This is an information message");
-        Log.wtf("MainActivity", "This is a WTF/Assertion Failure message.");
-        Log.e("MainActivity", "This is an error message");
+        //example 2
+        //Log.i("MainActivity", "This is an information message");
+        //Log.wtf("MainActivity", "This is a WTF/Assertion Failure message.");
+        //Log.e("MainActivity", "This is an error message");
 
+        //example 3
+        Toast.makeText(this, "This is a long toast message", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "This is a short toast message", Toast.LENGTH_SHORT).show();
     }
 }
