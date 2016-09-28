@@ -1,6 +1,7 @@
 package com.example.nicolas.nem_examples;
 
 import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -29,11 +30,16 @@ public class MainActivity extends AppCompatActivity {
         //tv.setTextSize(20);
 
         //example 5
+        //Resources resources = getResources();
+        //String s = resources.getQuantityString(R.plurals.dollarPlural, 2, 2);
+        //TextView tv = (TextView) findViewById(R.id.textview);
+        //tv.setText(s);
+
+        //example 6
         Resources resources = getResources();
-        String s = resources.getQuantityString(R.plurals.dollarPlural, 2, 2);
+        TypedArray taStringArray = resources.obtainTypedArray(R.array.myStringArray);
+        String s = taStringArray.getString(0) + ", " + taStringArray.getString(1) + ", " + taStringArray.getString(2);
         TextView tv = (TextView) findViewById(R.id.textview);
         tv.setText(s);
-
-
     }
 }

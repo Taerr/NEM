@@ -7,4 +7,9 @@
         <item quantity="one">1 Dollar</item>
         <item quantity="other">%d Dollars</item>
     </plurals>
+    <string-array name="myStringArray">
+        <item>First string</item>
+        <item>Second string</item>
+        <item>Third string</item>
+    </string-array>
 </resources>
