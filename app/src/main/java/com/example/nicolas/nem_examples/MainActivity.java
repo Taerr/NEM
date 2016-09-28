@@ -1,5 +1,6 @@
 package com.example.nicolas.nem_examples;
 
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,8 +24,16 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(this, "This is a short toast message", Toast.LENGTH_SHORT).show();
 
         //example 4
+        //TextView tv = (TextView) findViewById(R.id.textview);
+        //tv.setText("This was changed from inside MainActivity");
+        //tv.setTextSize(20);
+
+        //example 5
+        Resources resources = getResources();
+        String s = resources.getQuantityString(R.plurals.dollarPlural, 2, 2);
         TextView tv = (TextView) findViewById(R.id.textview);
-        tv.setText("This was changed from inside MainActivity");
-        tv.setTextSize(20);
+        tv.setText(s);
+
+
     }
 }

@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">NEM_examples</string>
     <string name="hello_world">Hello World !</string>
+    <string name="myStringOne">My String One</string>
+    <string name="myStringTwo">My String Two</string>
+    <plurals name="dollarPlural">
+        <item quantity="one">1 Dollar</item>
+        <item quantity="other">%d Dollars</item>
+    </plurals>
 </resources>
