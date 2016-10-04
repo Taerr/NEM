@@ -17,4 +17,9 @@
     <string name="button_two">Button two</string>
     <string name="button_three">Button three</string>
     <string name="button_four">Button four</string>
+    <string name="button_five">Button five</string>
+    <string name="button_six">Button six</string>
+    <string name="button_seven">Button seven</string>
+    <string name="button_eight">Button eight</string>
+    <string name="button_nine">Button nine</string>
 </resources>
