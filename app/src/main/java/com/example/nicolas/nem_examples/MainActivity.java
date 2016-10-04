@@ -64,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
         //iv.setImageDrawable(getResources().getDrawable(R.mipmap.ic_launcher));
 
         //example 9
-        TextView tv = (TextView) findViewById(R.id.textview);
-        tv.setText(android.R.string.emptyPhoneNumber);
-        tv.setBackgroundResource(android.R.color.holo_blue_dark);
+        //TextView tv = (TextView) findViewById(R.id.textview);
+        //tv.setText(android.R.string.emptyPhoneNumber);
+        //tv.setBackgroundResource(android.R.color.holo_blue_dark);
 
     }
 }
