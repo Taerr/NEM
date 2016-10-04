@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -52,9 +53,14 @@ public class MainActivity extends AppCompatActivity {
         //tv.setText(s2);
 
         //example 7
-        Resources resources = getResources();
-        TextView tv = (TextView) findViewById(R.id.textview);
-        tv.setBackgroundColor(resources.getColor(R.color.green));
+        //Resources resources = getResources();
+        //TextView tv = (TextView) findViewById(R.id.textview);
+        //tv.setBackgroundColor(resources.getColor(R.color.green));
+
+        //example 8
+        ImageView iv = (ImageView) findViewById(R.id.imageview);
+        iv.setImageDrawable(getResources().getDrawable(R.mipmap.ic_launcher));
+
     }
 }
 
