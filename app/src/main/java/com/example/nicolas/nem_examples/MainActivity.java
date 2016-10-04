@@ -36,10 +36,35 @@ public class MainActivity extends AppCompatActivity {
         //tv.setText(s);
 
         //example 6
-        Resources resources = getResources();
-        TypedArray taStringArray = resources.obtainTypedArray(R.array.myStringArray);
-        String s = taStringArray.getString(0) + ", " + taStringArray.getString(1) + ", " + taStringArray.getString(2);
-        TextView tv = (TextView) findViewById(R.id.textview);
-        tv.setText(s);
+        //Resources resources = getResources();
+        //TypedArray taStringArray = resources.obtainTypedArray(R.array.myStringArray);
+        //String s = taStringArray.getString(0) + ", " + taStringArray.getString(1) + ", " + taStringArray.getString(2);
+        //TextView tv = (TextView) findViewById(R.id.textview);
+        //tv.setText(s);
+
+        //Resources resources = getResources();
+        //TypedArray ta_int_array = resources.obtainTypedArray(R.array.int_array);
+        //TypedArray ta_float_array = resources.obtainTypedArray(R.array.float_array);
+
+        //String s1 = ta_int_array.getInt(0, 0) + ", " + ta_int_array.getInt(1, 0) + ", " + ta_int_array.getInt(2, 0);
+        //String s2 = ta_float_array.getFloat(0, 0) + ", " + ta_float_array.getFloat(1, 0) + ", " + ta_float_array.getFloat(2, 0);
+        //TextView tv = (TextView) findViewById(R.id.textview);
+        //tv.setText(s2);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
