@@ -2,10 +2,11 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ImageView
-        android:id ="@+id/imageview"
+    <TextView
+        android:id ="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="@string/iv_description"/>
+        android:text="@android:string/emptyPhoneNumber"
+        android:background="@android:color/holo_blue_dark"/>
 </FrameLayout>

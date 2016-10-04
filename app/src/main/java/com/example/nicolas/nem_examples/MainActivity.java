@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -58,8 +60,13 @@ public class MainActivity extends AppCompatActivity {
         //tv.setBackgroundColor(resources.getColor(R.color.green));
 
         //example 8
-        ImageView iv = (ImageView) findViewById(R.id.imageview);
-        iv.setImageDrawable(getResources().getDrawable(R.mipmap.ic_launcher));
+        //ImageView iv = (ImageView) findViewById(R.id.imageview);
+        //iv.setImageDrawable(getResources().getDrawable(R.mipmap.ic_launcher));
+
+        //example 9
+        TextView tv = (TextView) findViewById(R.id.textview);
+        tv.setText(android.R.string.emptyPhoneNumber);
+        tv.setBackgroundResource(android.R.color.holo_blue_dark);
 
     }
 }
