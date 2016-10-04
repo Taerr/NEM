@@ -13,4 +13,7 @@
         <item>Third string</item>
     </string-array>
     <string name="iv_description">Random image here</string>
+    <string name="button_one">Button one</string>
+    <string name="button_two">Button two</string>
+    <string name="button_three">Button three</string>
 </resources>
