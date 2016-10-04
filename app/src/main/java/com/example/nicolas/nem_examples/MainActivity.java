@@ -50,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
         //String s2 = ta_float_array.getFloat(0, 0) + ", " + ta_float_array.getFloat(1, 0) + ", " + ta_float_array.getFloat(2, 0);
         //TextView tv = (TextView) findViewById(R.id.textview);
         //tv.setText(s2);
+
+        //example 7
+        Resources resources = getResources();
+        TextView tv = (TextView) findViewById(R.id.textview);
+        tv.setBackgroundColor(resources.getColor(R.color.green));
     }
 }
 
