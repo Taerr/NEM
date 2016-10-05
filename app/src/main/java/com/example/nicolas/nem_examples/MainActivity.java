@@ -2,73 +2,49 @@ package com.example.nicolas.nem_examples;
 
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import static android.R.attr.onClick;
+
 public class MainActivity extends AppCompatActivity {
+
+    private int clicks;
+    private TextView tv_display;
+    private Button btn_clickme;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //example 2
-        //Log.i("MainActivity", "This is an information message");
-        //Log.wtf("MainActivity", "This is a WTF/Assertion Failure message.");
-        //Log.e("MainActivity", "This is an error message");
+        btn_clickme = (Button) findViewById(R.id.btn_clickme);
+        btn_clickme.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                clicks++;
+                tv_display.setText("Button has been clicked " + clicks + " times.");
+            }
+        });
 
-        //example 3
-        //Toast.makeText(this, "This is a long toast message", Toast.LENGTH_LONG).show();
-        //Toast.makeText(this, "This is a short toast message", Toast.LENGTH_SHORT).show();
-
-        //example 4
-        //TextView tv = (TextView) findViewById(R.id.textview);
-        //tv.setText("This was changed from inside MainActivity");
-        //tv.setTextSize(20);
-
-        //example 5
-        //Resources resources = getResources();
-        //String s = resources.getQuantityString(R.plurals.dollarPlural, 2, 2);
-        //TextView tv = (TextView) findViewById(R.id.textview);
-        //tv.setText(s);
-
-        //example 6
-        //Resources resources = getResources();
-        //TypedArray taStringArray = resources.obtainTypedArray(R.array.myStringArray);
-        //String s = taStringArray.getString(0) + ", " + taStringArray.getString(1) + ", " + taStringArray.getString(2);
-        //TextView tv = (TextView) findViewById(R.id.textview);
-        //tv.setText(s);
-
-        //Resources resources = getResources();
-        //TypedArray ta_int_array = resources.obtainTypedArray(R.array.int_array);
-        //TypedArray ta_float_array = resources.obtainTypedArray(R.array.float_array);
-
-        //String s1 = ta_int_array.getInt(0, 0) + ", " + ta_int_array.getInt(1, 0) + ", " + ta_int_array.getInt(2, 0);
-        //String s2 = ta_float_array.getFloat(0, 0) + ", " + ta_float_array.getFloat(1, 0) + ", " + ta_float_array.getFloat(2, 0);
-        //TextView tv = (TextView) findViewById(R.id.textview);
-        //tv.setText(s2);
-
-        //example 7
-        //Resources resources = getResources();
-        //TextView tv = (TextView) findViewById(R.id.textview);
-        //tv.setBackgroundColor(resources.getColor(R.color.green));
-
-        //example 8
-        //ImageView iv = (ImageView) findViewById(R.id.imageview);
-        //iv.setImageDrawable(getResources().getDrawable(R.mipmap.ic_launcher));
-
-        //example 9
-        //TextView tv = (TextView) findViewById(R.id.textview);
-        //tv.setText(android.R.string.emptyPhoneNumber);
-        //tv.setBackgroundResource(android.R.color.holo_blue_dark);
-
+        clicks = 0;
+        tv_display = (TextView) findViewById(R.id.tv_display);
     }
+
+    //public void buttonPress (View arg0){
+    //    clicks ++;
+    //    tv_display.setText("Button has been clicked " + clicks + " times.");
+    //}
 }
 
 

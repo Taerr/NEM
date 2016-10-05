@@ -4,18 +4,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-        <Button
-            android:text="@string/button_one"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/tv_display"
+        android:textSize="30sp"
+        android:text="Random Text"
+        />
 
-        <include layout="@layout/merge_layout"/>
-
-        <Button
-            android:text="@string/button_four"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+    <Button
+        android:id = "@+id/btn_clickme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        android:onClick="buttonPress"
+        />
 
 
 </LinearLayout>
