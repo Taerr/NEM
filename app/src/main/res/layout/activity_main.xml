@@ -9,15 +9,15 @@
         android:layout_height="wrap_content"
         android:id = "@+id/tv_display"
         android:textSize="30sp"
-        android:text="Random Text"
+        android:text="@string/tv_initial"
         />
 
-    <Button
-        android:id = "@+id/btn_clickme"
+    <EditText
+        android:id = "@+id/et_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click Me"
-        android:onClick="buttonPress"
+        android:hint="@string/et_hint"
+        android:inputType="text"
         />
 
 
