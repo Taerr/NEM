@@ -4,21 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+    <com.example.nicolas.nem_examples.CustomView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id = "@+id/tv_display"
-        android:textSize="30sp"
-        android:text="@string/tv_initial"
-        />
-
-    <EditText
-        android:id = "@+id/et_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/et_hint"
-        android:inputType="text"
-        />
+        android:layout_height="match_parent"/>
 
 
 </LinearLayout>

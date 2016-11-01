@@ -22,19 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tv_display = (TextView) findViewById(R.id.tv_display);
-        et_input = (EditText) findViewById(R.id.et_input);
 
-        et_input.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView view, int actionId, KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_DONE){
-                    tv_display.setText("Entered: " + et_input.getText());
-                    return true;
-                }
-                return false;
-            }
-        });
     }
 
 }
